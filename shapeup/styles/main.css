@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    padding: 10px;
+    margin-left: 20px;
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid green;
+}
+
+main {
+    clear: both;
+}
+
+header h2 {
+    font-size: 250%;
+    margin: 0.5em 0;
+    color: steelblue;
+    font-style: italic;
+    text-shadow: 2px 2px 8px steelblue;
+}
+
+header h3 {
+    font-size: 150%;
+}
+
+header img {
+    float: left;
+    margin-right: 2em;
+}
+
+section h2 {
+    margin: 0.5em 0;
+}
+
+h1 {
+    font-size: 175%;
+}
+
+p {
+    margin: 1em 0;
+}
+
+/* psuedo classes for section */
+
+section a:link {
+    color: maroon;
+  }
+
+section a:visited {
+    color: maroon;
+}
+
+section a:hover {
+    color: steelblue;
+}
+
+section a:active {
+    color: steelblue;
+}
+
+/* bold all <a> in <aside> */
+aside a {
+    font-weight: bold;
+}
+
+/* psuedo classes for aside */
+
+aside a:link {
+    color: steelblue;
+  }
+
+aside a:visited {
+    color: steelblue;
+}
+
+aside a:hover {
+    color: maroon;
+}
+
+aside a:active {
+    color: maroon;
+}
+
+aside ul {
+    line-height: 20px;
+    margin-left: 25px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 80%;
+    font-variant: small-caps;
+    border-top: 1px solid black;
+}
