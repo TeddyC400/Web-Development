@@ -20,10 +20,10 @@ main {
 }
 
 header {
-    border-bottom: 5px solid steelblue;
-    background-image: linear-gradient(white, steelblue);
+    background-image: linear-gradient(steelblue, white);
     padding: 1.5em 0;
 }
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -45,6 +45,51 @@ header h3 {
 header img {
     float: left;
     margin-right: 2em;
+}
+
+/* nav bar formatting */
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 20%;
+}
+
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+}
+
+#nav_menu ul li a:hover {
+    background-color: lightsteelblue;
+    color: yellow;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+#nav_menu ul ul li {
+    float: none;
+}
+
+#nav_menu ul ul li a {
+    text-align: left;
+    padding-left: 0.25em;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;
 }
 
 section {
@@ -128,7 +173,7 @@ aside ul {
     margin-top: 1em;
 }
 
-footer p {
+footer {
     text-align: center;
     font-size: 80%;
     font-variant: small-caps;
