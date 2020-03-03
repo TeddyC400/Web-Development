@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width: 800px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
+}
+
+/* the styles for the header */
+header {
+	border-bottom: 3px solid #931420;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
+header img {
+	float: left;
+}
+
+header h2 {
+	font-size: 170%;
+	color: #800000;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.shadow {
+	text-shadow: 4px 4px 4px #800000;
+}
+
+/* the styles for the section */
+main section h2, main aside h2 {
+	font-size: 130%;
+	color: #800000;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+}
+
+main aside h3 {
+	font-size: 105%;
+	padding-bottom: 0.25em;
+	font-size: 105%;
+}
+
+main section p {
+	padding-bottom: 0.5em;
+}
+
+main section blockquote {
+	font-style: italic;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+main section {
+	padding: 0.5em 0;
+}
+
+main section h1 {
+	font-size: 150%;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+    margin: 0 0;
+    color: #800000;
+}
+
+main section h2 {
+    padding-top: 0;
+    font-size: 95%;
+    color: black;
+}
+
+main section h3 {
+	font-size: 105%;
+	padding-bottom: 0.25em;
+}
+
+main section img {
+	float: right;
+	margin: 5px 5px;
+	border: 1px solid black;
+}
+
+main section ul {
+	padding-bottom: 0.25em;
+	padding-left: 1.25em;
+}
+
+main section li {
+	padding-bottom: 0.35em;
+}
+
+main aside img {
+	padding-bottom: 1em;
+}
+
+section {
+	width: 525px;
+	float: right;
+	padding: 0 20px;
+	padding-bottom: 20px;
+}
+
+aside {
+	width: 215px;
+	float: left;
+    padding: 20px 0;
+    margin: 0 20px;
+}
+
+/* the styles for the links */
+a:active {
+	font-style: italic;
+}
+
+/* the styles for the footer */
+footer p {
+	color: white;
+	text-align: center;
+	border-top: 3px solid #931420;
+	border-bottom: 3px solid #931420;
+	background-color: #931420;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	clear: both;
+}
