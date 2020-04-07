@@ -6,7 +6,18 @@
 	<title>San Joaquin Valley Town Hall</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="styles/normalize.css">
+
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+
 	<link rel="stylesheet" href="styles/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -16,6 +27,7 @@
 		<h3>Celebrating our <em class="shadow">75<sup>th</sup></em> Year</h3>
 	</header>
 
+	<nav id="mobile_menu"></nav>
 	<nav id="nav_menu">
 		<ul>
 			<li><a href="." class="current">Home</a></li>
@@ -64,7 +76,8 @@
 
 		<aside>
 			<h2>Guest speakers</h2>
-
+			
+			<div>
 			<h3>October <br> <a href="speakers/toobin.html">Jeffrey Toobin</a></h3>
 			<img src="images/toobin75.jpg" alt="Toobin" >
 
@@ -76,6 +89,7 @@
 
 			<h3>February <br> <a href="speakers/sampson.html">Scott Sampson</a></h3>
 			<img src="images/sampson75.jpg" alt="Sampson">
+			</div>
 		</aside>
 
 	</main>

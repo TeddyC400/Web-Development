@@ -7,7 +7,8 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 100%;
-	width: 800px;
+	width: 98%;
+	max-width: 960px;
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-right: auto;
@@ -46,6 +47,11 @@ header h3 {
 	text-shadow: 4px 4px 4px #800000;
 }
 
+/* mobile menu styles */
+#mobile_menu {
+	display: none
+}
+
 
 /* nav menu styles */
 #nav_menu ul {
@@ -57,11 +63,11 @@ header h3 {
 
 #nav_menu ul li {
 	float: left;
+	width: 20%;
 }
 
 #nav_menu ul li a {
 	display: block;
-	width: 160px;
 	text-align: center;
 	padding: 1em 0;
 	text-decoration: none;
@@ -74,6 +80,7 @@ header h3 {
 	position: absolute;
 	display: none;
 	top: 100%;
+	width: 100%;
 }
 
 #nav_menu ul ul li {
@@ -139,6 +146,8 @@ main section article img {
 	float: right;
 	margin: 5px 5px;
 	border: 1px solid black;
+	max-width: 40%;
+	min-width: 150px;
 }
 
 main section ul {
@@ -155,7 +164,7 @@ main aside img {
 }
 
 main section {
-	width: 525px;
+	width: 54.6875%;
 	float: right;
 	padding: 0 20px;
 	padding-bottom: 20px;
@@ -166,9 +175,9 @@ main section {
 }
 
 aside {
-	width: 215px;
+	width: 22.3958%;
 	float: right;
-	padding: 20px 0;
+	padding: 20px 60px;
 }
 
 /* the styles for the links */
@@ -177,7 +186,7 @@ a:active {
 }
 
 /* the styles for the footer */
-footer p {
+footer {
 	color: white;
 	text-align: center;
 	border-top: 3px solid #931420;
@@ -186,4 +195,57 @@ footer p {
 	padding-top: 1em;
 	padding-bottom: 1em;
 	clear: both;
+}
+
+/* media queries */
+
+/* tablet in portrait view */
+@media only screen and (max-width: 959px) {
+
+	main section h1 {
+		font-size: 135%;
+	}
+	main h2 {
+		font-size: 120%;
+	}
+
+}
+/* phone in landscape orientation */
+@media only screen and (max-width: 767px) {
+	
+	header img {
+		float: none;
+	}
+	main section {
+		float: none;
+		width: 80%;
+	}
+	main section article img {
+		max-width: 30%;
+	}
+	main aside {
+		float: none;
+		width: 80%;
+		padding-right: 10px;
+	}
+	main aside div {
+		column-count: 2;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+		background-color: #800000 !important;
+	}
+
+
+}
+/* phone in portrait orientation */
+@media only screen and (max-width: 479px) {
+
+	body {
+		font-size: 90%;
+	}
+
 }
