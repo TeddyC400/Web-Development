@@ -1,0 +1,67 @@
+
+/* html and body styles */
+
+html {
+    background-image: linear-gradient(brown, yellow);
+    height: 100%;
+    display: block;
+}
+
+body {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 25px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fac695+0,f5ab66+47,ef8d31+100;Orange+3D+%232 */
+    background: #fac695; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fac695 0%, #f5ab66 47%, #ef8d31 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #fac695 0%,#f5ab66 47%,#ef8d31 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #fac695 0%,#f5ab66 47%,#ef8d31 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fac695', endColorstr='#ef8d31',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* header styles */
+
+header {
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+/* nivo slider styles */
+
+#slider, .nivoSlider {
+    width: 600px;
+    height: 450px;
+}
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 0;
+}
+
+/* footer styles */
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    font-weight: bold;
+    color: black;
+    border-top: 1px solid black;
+}
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        border: none;
+        border-radius: 0;
+    }
+
+
+
+}
