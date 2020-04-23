@@ -25,24 +25,38 @@ body {
 /* header styles */
 
 header {
-    text-align: center;
     font-size: 150%;
     font-weight: bold;
     color: black;
     border-bottom: 1px solid black;
 }
-
-/* nivo slider styles */
-
-#slider, .nivoSlider {
-    width: 600px;
-    height: 450px;
+header img {
+    width: 100px;
+    height: 100px;
 }
+#header-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header-left {
+    margin-right: 20px;
+}
+#header-right {
+    margin-left: 20px;
+}
+
+/* wrapper styles */
+
 #wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 100px 0 0;
+}
+#slider, .nivoSlider {
+    width: 600px;
+    height: 450px;
 }
 
 /* footer styles */
@@ -55,11 +69,36 @@ footer {
     border-top: 1px solid black;
 }
 
-@media only screen and (max-width: 767px) {
+/* phone size */
 
+@media only screen and (max-width: 767px) {
+    
+    html {
+        background: none;
+    }
+    header {
+        font-size: 80%;
+    }
+    header img {
+        width: 10%;
+        height: 10%;
+    }
     body {
         border: none;
         border-radius: 0;
+    }
+    #wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0 0;
+    }
+    #slider, .nivoSlider {
+        width: 80%;
+        height: 80%;
+    }
+    footer {
+        font-size: 70%;
     }
 
 

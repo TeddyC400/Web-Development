@@ -3,7 +3,8 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>jQuery Nivo Slider Demo</title>
+	<title>Grizzly Bear Slideshow</title>
+	<link rel="shortcut icon" href="../slider_demo/images/favicon.ico">
 
 	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
@@ -23,23 +24,24 @@
 <body>
 
 	<header>
-		<h1>Grizzly Bear Slideshow</h1>
+		<div id="header-center">
+			<img id="header-left" src="../slider_demo/images/face.jpg" alt="Grizzly Bear Face">
+			<h1>Grizzly Bear Slideshow</h1>
+			<img id="header-right" src="../slider_demo/images/face.jpg" alt="Grizzly Bear Face">
+		</div>
 	</header>
 
 	<div id="wrapper">
+
 		<div class="slider-wrapper theme-default">
 
 			<div id="slider" class="nivoSlider">
-				<img src="images/1.jpg" data-thumb="images/1.jpg" title="Grizzly bears are 3-4 feet in height when standing on all four legs. By standing vertically, they can reach 8 feet.">
-				<img src="images/2.jpg" data-thumb="images/2.jpg" title="They are extremely fast runners, reaching 30 miles per hour.">
-				<img src="images/3.jpg" data-thumb="images/3.jpg" title="Grizzly bears have amazing eyesight and sense of smell. Their smell is far better than dogs.">
-				<img src="images/4.jpg" data-thumb="images/4.jpg" title="They eat up to 25 fish per day to get ready for hibernation. They need a lot of fat to reserve.">
-				<img src="images/5.jpg" data-thumb="images/5.jpg" title="Grizzly bears can climb trees. Do not climb one if you are running away from one!">
-				<img src="images/6.jpg" data-thumb="images/6.jpg" title="They can live up to 30 years!">
-			</div>
-
-			<div id="htmlcaption" class="nivo-html-caption">
-				<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+				<img src="../slider_demo/images/1.jpg" data-thumb="../slider_demo/images/1.jpg" title="Grizzly bears are 3-4 feet in height when standing on all four legs. By standing vertically, they can reach 8 feet.">
+				<img src="../slider_demo/images/2.jpg" data-thumb="../slider_demo/images/2.jpg" title="They are extremely fast runners, reaching 30 miles per hour.">
+				<img src="../slider_demo/images/3.jpg" data-thumb="../slider_demo/images/3.jpg" title="Grizzly bears have amazing eyesight and sense of smell. Their smell is far better than dogs.">
+				<img src="../slider_demo/images/4.jpg" data-thumb="../slider_demo/images/4.jpg" title="They eat up to 25 fish per day to get ready for hibernation. They need a lot of fat to reserve.">
+				<img src="../slider_demo/images/5.jpg" data-thumb="../slider_demo/images/5.jpg" title="Grizzly bears can climb trees. Do not climb one if you are running away from one!">
+				<img src="../slider_demo/images/6.jpg" data-thumb="../slider_demo/images/6.jpg" title="They can live up to 30 years!">
 			</div>
 
 		</div>
@@ -60,7 +62,7 @@
             <script>
                 var today = new Date();
                 document.write(today.getFullYear());
-                document.write(", Anthony Blazejowski");
+                document.write(" - Anthony Blazejowski");
             </script>
         </p>
 	</footer>
