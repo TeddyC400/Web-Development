@@ -3,16 +3,17 @@
 
 html {
     background-image: linear-gradient(brown, yellow);
-    height: 100%;
     display: block;
 }
 
 body {
     max-width: 960px;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     border: 1px solid black;
     border-radius: 25px;
+    box-shadow: 3px 10px 35px orangered, -3px -10px 35px orangered;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fac695+0,f5ab66+47,ef8d31+100;Orange+3D+%232 */
     background: #fac695; /* Old browsers */
     background: -moz-linear-gradient(top,  #fac695 0%, #f5ab66 47%, #ef8d31 100%); /* FF3.6-15 */
@@ -52,6 +53,7 @@ header img {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 70vh;           /* Trying to make it fill the most on screen */
     margin: 100px 0 0;
 }
 #slider, .nivoSlider, .nivo-main-image {
@@ -86,6 +88,7 @@ footer {
     body {
         border: none;
         border-radius: 0;
+        box-shadow: none;
     }
     #wrapper {
         display: flex;
@@ -94,7 +97,7 @@ footer {
         margin: 50px 0 0;
     }
     #slider, .nivoSlider {
-        width: 70%;
+        width: 100%;
         height: 70%;
     }
     footer {
