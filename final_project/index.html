@@ -8,23 +8,15 @@
     <title>James Bond - Informative Website</title>
 </head>
 <body>
-    <header>
+    <header class="clearfix">
+        <a href="/final_project/index.html"><img src="images/misc/james_bond_icon.jpg"></a>
         <h1>007: James Bond</h1>
         <h2>British Secret Agent</h2>
     </header>
 
-    <nav id="nav_menu">
-        <ul>
+    <nav>
+        <ul class="nav">
             <li><a href="/final_project/pages/bonds.html">Bonds</a>
-                <ul>
-                    <li><a href="/final_project/pages/bonds_connery.html">Connery</a></li>
-                    <li><a href="/final_project/pages/bonds_lazenby.html">Lazenby</a></li>
-                    <li><a href="/final_project/pages/bonds_moore.html">Moore</a></li>
-                    <li><a href="/final_project/pages/bonds_dalton.html">Dalton</a></li>
-                    <li><a href="/final_project/pages/bonds_brosnan.html">Brosnan</a></li>
-                    <li><a href="/final_project/pages/bonds_craig.html">Craig</a></li>
-                </ul>
-            </li>
             <li><a href="/final_project/pages/books.html">Books</a></li>
             <li><a href="/final_project/pages/videogames.html">Video Games</a></li>
             <li><a href="/final_project/pages/stats.html">Stats</a></li>
@@ -32,21 +24,38 @@
     </nav>
 
     <main>
-        <h2>Background History</h2>
-        <img src="images/misc/ian_fleming.jpg" alt="Ian Fleming">
-        <i>Ian Fleming, creator of the fictional James Bond</i>
-        <p>
-            James Bond is a fictional character created by author Ian Fleming. Starring in Ian Fleming's 12 books and 25 movies,
-            James Bond continues to be represented in the film series for over 58 years. The author got his inspiration on the creation
-            of James Bond from <q>a compound of all the secret agents and commando types I met during the war.</q> The iconic name was
-            not just a made up name, but rather an inspiration from the American ornitholigst (studies birds), James Bond.
-        </p>
+        
+        <div class="wrapper">
+            <div class="column">
+        
+                <h2>The Cold Blooded Spy</h2>
+                <p>
+                    James Bond is a fictional character created by author Ian Fleming. Starring in Ian Fleming's 12 books and 25 movies,
+                    James Bond continues to be represented in the film series for over 58 years.
+                </p>
 
-        <h2>The Secret Agent</h2>
-        <p>
-            007, James Bond's code number, is a spy working in the Secret Intelligence Service (MI6). Formally a Royal Naval Reserve
-            Commander, 
-        </p>
+                <h2>Background History</h2>
+                <div class="wrapper_image">
+                    <img src="images/misc/ian_fleming.jpg" alt="Ian Fleming">
+                    
+                </div>
+                <div class="wrapper_fleming">
+                    <i>Ian Fleming</i>
+                </div>
+                <p>
+                    The author got his inspiration on the creation
+                    of James Bond from <q>a compound of all the secret agents and commando types I met during the war.</q> The iconic name was
+                    not just a made up name, but rather an inspiration from the American ornitholigst (studies birds), James Bond.
+                </p>
+
+            </div>
+            <div class="column" id="right_side">
+                <p>tezt</p>
+            </div>
+        </div>
+        
+        
+        
     </main>
 
     <aside>

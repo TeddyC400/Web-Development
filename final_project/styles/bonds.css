@@ -1,0 +1,13 @@
+/* wrapper & column properties */
+
+.wrapper {
+    width: 100%;
+    padding-right: 10px;
+}
+.wrapper img {
+    float: left;
+    padding-right: 10px;
+}
+.wrapper_bond {
+    margin-top: 20px;
+}
