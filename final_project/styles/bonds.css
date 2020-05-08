@@ -11,3 +11,48 @@
 .wrapper_bond {
     margin-top: 20px;
 }
+.wrapper a p {
+    padding-top: 50px;
+}
+.wrapper h2 {
+    padding: 10px 0;
+    font-style: italic;
+}
+.wrapper h3 {
+    padding-top: 10px;
+}
+.wrapper_border {
+    border-top: 1px solid black;
+}
+
+.rating_number {
+    font-weight: bold;
+}
+.rating_good {
+    color: rgb(0, 153, 0);
+}
+.rating_average {
+    color: rgb(255, 255, 0);
+}
+.rating_bad {
+    color: rgb(153, 0, 0)
+}
+.image_poster {
+    width: 216px;
+    height: 305px;
+    padding-bottom: 10px;
+}
+#centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+#centralize h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+#centralize p {
+    font-weight: bold;
+    text-align: center;
+}
