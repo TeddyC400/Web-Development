@@ -56,3 +56,9 @@
     font-weight: bold;
     text-align: center;
 }
+
+/* button properties */
+button {
+    width: 50px;
+    margin-right: 20px;
+}

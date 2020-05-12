@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/final_project/images/misc/favicon.ico">
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <link rel="stylesheet" href="/final_project/styles/main.css">
+    <link rel="stylesheet" href="/final_project/styles/bonds.css">
+    <title>James Bond - Bonds</title>
+</head>
+<body>
+    <header class="clearfix">
+        <a href="/final_project/index.html"><img src="/final_project/images/misc/james_bond_icon.jpg"></a>
+        <h1>007: James Bond</h1>
+        <h2>British Secret Agent</h2>
+    </header>
+
+    <nav>
+        <ul class="nav">
+            <li><a href="/final_project/index.html">Home</a></li>
+            <li><a href="/final_project/pages/bonds.html">Bonds</a>
+            <li><a href="/final_project/pages/books.html">Books</a></li>
+            <li><a href="/final_project/pages/stats.html">Stats</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <div class="wrapper">
+            <div class="column">
+        
+                <h2>Stats</h2>
+                <p>
+                    All the statistics below are from the James Bond franchise (movies only). Note that some numbers are not 100% accurate and may be a few numbers off.
+                </p>
+                
+
+                <p><button id="button1" type="killstreaks">Stat 1</button> How many times Bond has killed his enemies throughout his time.</p>
+                <p><button id="button2" type="movie_appearances">Stat 2</button> How many times each actor appeared as Bond.</p>
+                <p><button id="button3" type="highest_grossing_actors">Stat 3</button> Highest-grossing actors</p>
+                <p><button id="button4" type="kisses">Stat 4</button> How many times Bond has kissed a girl.</p>
+                <p><button id="button5" type="evil_bond_girls">Stat 5</button> The amount of evil bond girls Bond had to face.</p>
+                <p><button id="button6" type="sacrificed_bond_girls">Stat 6</button> The amount of bond girls who were killed during the films.</p>
+                <div class="wrapper_bond">
+                    <div id="wrapper_chart" style="height:370px; width: 100%"></div>
+                </div>
+
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        &copy; Anthony Teddy Blazejowski
+        <script>
+            var year = new Date();
+            document.write(year.getFullYear());
+        </script>
+    </footer>
+
+    <script>
+        window.onload = function () {
+
+            var dataJson =
+                ' { "killstreaks": [72, 5, 90, 23, 135, 71],' +
+                ' "movie_appearances": [6, 1, 7, 2, 4, 5], ' +
+                ' "highest_grossing_actors": [4.3, 0.505, 3.8, 0.666, 2.0, 3.2], ' +
+                ' "kisses": [18, 3, 24, 4, 12, 10], ' +
+                ' "evil_bond_girls": [7, 1, 6, 0, 4, 1], ' +
+                ' "sacrificed_bond_girls": [5, 1, 6, 1, 1, 4] } ' ;
+
+            var bond = JSON.parse(dataJson);
+            var y_value = [
+                    bond.killstreaks[0], bond.killstreaks[1],
+                    bond.killstreaks[2], bond.killstreaks[3],
+                    bond.killstreaks[4], bond.killstreaks[5]
+                ];
+            var chart_title = "Kill Streaks";
+            var chart_y_name = "Kills";
+
+            var chart = new CanvasJS.Chart("wrapper_chart", {
+                animationEnabled: true,
+                theme: "dark1", // "light1", "light2", "dark1", "dark2"
+                title:{
+                    text: chart_title
+                },
+                axisY: {
+                    title: chart_y_name
+                },
+                data: [{        
+                    type: "column",  
+                    showInLegend: false, 
+                    dataPoints: [      
+                        { y: y_value[0], label: "Connery" },
+                        { y: y_value[1],  label: "Lazenby" },
+                        { y: y_value[2],  label: "Moore" },
+                        { y: y_value[3],  label: "Dalton" },
+                        { y: y_value[4],  label: "Brosnan" },
+                        { y: y_value[5], label: "Craig" }
+                    ]
+                }]
+            });
+            chart.render();
+
+            function updateChart() {
+                chart.options.title.text = chart_title;
+                chart.options.axisY.title = chart_y_name;
+                for (let index = 0; index < 6; index++) {
+                    chart.options.data[0].dataPoints[index].y = y_value[index];
+                }
+                chart.render();
+            }
+
+            document.getElementById("button1").onclick = function() {
+                y_value = [
+                    bond.killstreaks[0], bond.killstreaks[1],
+                    bond.killstreaks[2], bond.killstreaks[3],
+                    bond.killstreaks[4], bond.killstreaks[5]
+                ];
+                chart_title = "Kill Streaks";
+                chart_y_name = "Kills";
+
+                updateChart();
+            }
+            document.getElementById("button2").onclick = function() {
+                y_value = [
+                    bond.movie_appearances[0], bond.movie_appearances[1],
+                    bond.movie_appearances[2], bond.movie_appearances[3],
+                    bond.movie_appearances[4], bond.movie_appearances[5]
+                ];
+                chart_title = "Movie Appearances";
+                chart_y_name = "Appearances in Bond Films";
+                
+                updateChart();
+            }
+            document.getElementById("button3").onclick = function() {
+                y_value = [
+                    bond.highest_grossing_actors[0], bond.highest_grossing_actors[1],
+                    bond.highest_grossing_actors[2], bond.highest_grossing_actors[3],
+                    bond.highest_grossing_actors[4], bond.highest_grossing_actors[5]
+                ];
+                chart_title = "Highest Grossing Actors";
+                chart_y_name = "Grossing Value in Billions";
+                
+                updateChart();
+            }
+            document.getElementById("button4").onclick = function() {
+                y_value = [
+                    bond.kisses[0], bond.kisses[1],
+                    bond.kisses[2], bond.kisses[3],
+                    bond.kisses[4], bond.kisses[5]
+                ];
+                chart_title = "Kisses";
+                chart_y_name = "Amount of Kisses";
+                
+                updateChart();
+            }
+            document.getElementById("button5").onclick = function() {
+                y_value = [
+                    bond.evil_bond_girls[0], bond.evil_bond_girls[1],
+                    bond.evil_bond_girls[2], bond.evil_bond_girls[3],
+                    bond.evil_bond_girls[4], bond.evil_bond_girls[5]
+                ];
+                chart_title = "Evil Bond Girls";
+                chart_y_name = "Evil Girls";
+                
+                updateChart();
+            }
+            document.getElementById("button6").onclick = function() {
+                y_value = [
+                    bond.sacrificed_bond_girls[0], bond.sacrificed_bond_girls[1],
+                    bond.sacrificed_bond_girls[2], bond.sacrificed_bond_girls[3],
+                    bond.sacrificed_bond_girls[4], bond.sacrificed_bond_girls[5]
+                ];
+                chart_title = "Sacrificed Bond Girls";
+                chart_y_name = "Bond Girls Who Died";
+                
+                updateChart();
+            }
+            
+
+        }
+    </script>
+</body>
+</html>
