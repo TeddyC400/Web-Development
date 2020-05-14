@@ -118,4 +118,7 @@ button img {
     button {
         font-size: 18px;
     }
+    #button_top {
+        display: none;
+    }
 }
